@@ -1,0 +1,30 @@
+.hero__button {
+	transition: color 250ms var(--timing-translation), background-color 250ms var(--timing-translation),
+		border 250ms var(--timing-translation);
+	flex-wrap: wrap;
+	margin-right: auto;
+	margin-left: auto;
+
+	border-radius: 4px;
+	padding: 10px 32px;
+	min-width: 200px;
+	border: 1px solid var(--accent-color);
+
+	color: var(--text-color-footer);
+	background-color: var(--accent-color);
+	font-family: Roboto;
+	// @include font(700px, 16px, 1.88);
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.88;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.06em;
+	&:hover,
+	&:focus {
+		color: var(--accent-color);
+		background-color: var(--text-color-footer);
+		border-color: var(--primery-fon-color);
+	}
+}

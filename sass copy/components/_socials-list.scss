@@ -1,0 +1,66 @@
+.socials-list__icon--footer {
+	transition: background-color 250ms var(--timing-translation);
+	color: #ffffff;
+	&:hover,
+	&:focus {
+		background-color: var(--accent-color);
+		background: #2196f3;
+		transition: transform 250ms var(--timing-translation);
+	}
+}
+
+.socials-list__item--footer {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+.subscription-container {
+	content: "";
+	width: 570px;
+	height: 86px;
+	margin-left: 93px;
+}
+
+.subscription__discus {
+	display: inline-flex;
+}
+
+.subscription__input {
+	width: 358px;
+	height: 50px;
+	padding: 15px;
+	margin-right: 12px;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	box-sizing: border-box;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	border-radius: 4px;
+	background: var(--title-fon-color);
+	color: var(--text-color-footer);
+	&::placeholder {
+		color: rgba(255, 255, 255, 0.6);
+	}
+}
+
+.subscription-button__snd {
+	width: 200px;
+	height: 50px;
+	padding: 10px 29px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+	background: var(--accent-color);
+	// @include font(normal, 700px, 16px, 1.88);
+	font-style: normal;
+	font-weight: 700px;
+	font-size: 16px;
+	line-height: 1.88;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	letter-spacing: 0.06em;
+	color: var(--text-color-footer);
+	display: flex;
+}
+
+.subscription-button__icon {
+	width: 24px;
+	height: 24px;
+	fill: currentColor;
+	margin-left: 10px;
+}
