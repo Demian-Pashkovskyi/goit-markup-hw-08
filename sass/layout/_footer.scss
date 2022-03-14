@@ -7,12 +7,21 @@
 	text-decoration: none;
 	&-container {
 		display: flex;
-		align-items: baseline;
-		width: 1200px;
+		align-items: center;
+		max-width: 480px;
 		padding-left: 15px;
 		padding-right: 15px;
 		margin-left: auto;
 		margin-right: auto;
+		flex-direction: column;
+
+		@media screen and (min-width: 768px) {
+			max-width: 768px;
+		}
+
+		@media screen and (min-width: 1200px) {
+			max-width: 1200px;
+		}
 	}
 	&__link {
 		color: var(--text-color-footer);
@@ -80,5 +89,17 @@
 			letter-spacing: 0.03em;
 			text-transform: uppercase;
 		}
+	}
+}
+.order-adress {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	flex-direction: column;
+
+	&__list {
+		width: 232px;
+		justify-content: center;
+		flex-direction: column;
 	}
 }
