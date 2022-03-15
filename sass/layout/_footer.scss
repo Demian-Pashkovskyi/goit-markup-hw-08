@@ -1,6 +1,6 @@
 .footer {
-	align-items: baseline;
-	display: block;
+	// align-items: baseline;
+	// display: block;
 	padding-top: 60px;
 	padding-bottom: 60px;
 	background-color: var(--title-fon-color);
@@ -17,6 +17,9 @@
 
 		@media screen and (min-width: 768px) {
 			max-width: 768px;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			flex-direction: row;
 		}
 
 		@media screen and (min-width: 1200px) {
@@ -75,8 +78,17 @@
 		}
 	}
 	&-nav {
-		margin-left: 70px;
+		// margin-left: 70px;
+		margin: 60px 0px 60px 0px;
 		align-items: baseline;
+
+		@media screen and (min-width: 768px) {
+			margin: 65px 0px 102px 0px;
+		}
+
+		@media screen and (min-width: 1200px) {
+			margin: 72px 0px 100px 0px;
+		}
 		&__sets {
 			margin-bottom: 20px;
 			color: var(--primery-fon-color);
@@ -88,18 +100,75 @@
 			line-height: 1.14;
 			letter-spacing: 0.03em;
 			text-transform: uppercase;
+			text-align: center;
+
+			@media screen and (min-width: 1200px) {
+				text-align: start;
+			}
 		}
 	}
 }
 .order-adress {
 	display: flex;
-	align-content: center;
-	justify-content: center;
+	align-items: center;
 	flex-direction: column;
 
+	@media screen and (min-width: 1200px) {
+		align-items: start;
+		margin-right: 70px;
+	}
+
 	&__list {
-		width: 232px;
-		justify-content: center;
+		display: flex;
 		flex-direction: column;
+		align-items: center;
+
+		@media screen and (min-width: 1200px) {
+			align-items: start;
+		}
+	}
+}
+
+.socials {
+	padding-top: 16px;
+	&-lists {
+		display: flex;
+		height: 44px;
+		padding: 0px;
+		margin: 0px;
+		list-style: none;
+		justify-content: center;
+		&__item {
+			margin-right: 10px;
+			background-position: center;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 50%;
+			height: 44px;
+			width: 44px;
+			list-style: none;
+			fill: currentColor;
+			&:last-child {
+				margin-right: 0px;
+			}
+		}
+		&__link {
+			transition: color 250ms var(--timing-translation), background-color 250ms var(--timing-translation);
+
+			display: flex;
+			height: 100%;
+			width: 100%;
+			border-radius: 50%;
+			align-items: center;
+			justify-content: center;
+			background-position: center;
+			color: #afb1b8;
+			&:hover,
+			&:focus {
+				background-color: var(--accent-color);
+				color: #fff;
+			}
+		}
 	}
 }
