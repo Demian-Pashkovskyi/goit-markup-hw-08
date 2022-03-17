@@ -20,20 +20,28 @@
 
 		<header class="header">
 			<div class="header-container">
-				<a href="index.html" class="header__logo">
-					<svg class="header__icon" width="145" height="31"><use href="./images/icons.svg#icon-WebStudio"></use></svg>
-				</a>
-				<nav>
+				<nav class="header-nav">
+					<a href="index.html" class="header__logo">
+						<svg class="header__icons" width="145" height="31">
+							<use href="./images/icons.svg#icon-WebStudio"></use>
+						</svg></a>
+		
 					<ul class="site-nav">
 						<li class="site-nav__item">
-							<a href="index.html" class="site-nav__link">Студия</a>
+							<a href="index.html" class="site-nav__link site-nav__link--active">Студия</a>
 						</li>
-						<li class="site-nav__item">
-							<a href="./portfolio.html " class="site-nav__link site-nav__link--active">Портфолио</a>
-						</li>
+						<li class="site-nav__item"><a href="./portfolio.html " class="site-nav__link site-nav__link--active">Портфолио</a></li>
 						<li class="site-nav__item"><a href="index.html" class="site-nav__link">Контакты</a></li>
 					</ul>
 				</nav>
+		
+				<button type="button" class="header__icon">
+					<svg class="header__icons" width="40px" height="40px" aria-label="Переключатель меню">
+						<use href="./images/icons.svg#icon-close_40px"></use>
+						<use href="./images/icons.svg#icon-menu_40px"></use>
+					</svg>
+				</button>
+		
 				<ul class="header-contacts">
 					<li class="header-contacts__item">
 						<a href="mailto:info@devstudio.com" class="header-contacts__link">
@@ -61,7 +69,7 @@
 				<div class="container">
 					<h1 class="portfolio__title">Портфолио</h1>
 					<div class="navigation">
-						<ul class="navigaton-list">
+						<ul class="navigation-list">
 							<li class="navigation-list__item">
 								<button type="button" class="navigation-list__button">Все</button>
 							</li>
@@ -231,14 +239,10 @@
 							<use href="./images/icons.svg#icon-WebStudio_footer"></use>
 						</svg>
 					</a>
-					<ul>
+					<ul class="order-adress__list">
 						<li class="footer__item">
-							<a
-								class="footer__list"
-								href="https://goo.gl/maps/K7o9gSTaup2MySCS8"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
+							<a class="footer__list" href="https://goo.gl/maps/K7o9gSTaup2MySCS8" target="_blank"
+								rel="noopener noreferrer">
 								г. Киев, пр-т Леси Украинки, 26
 							</a>
 						</li>
@@ -249,33 +253,34 @@
 							<a href="tel:+380961111111" class="footer__adress">+38 096 111 11 11</a>
 						</li>
 					</ul>
+		
 				</div>
 				<div class="footer-nav">
 					<p class="footer-nav__sets">присоединяйтесь</p>
-					<ul class="socials-list">
-						<li class="socials-list__item socials-list__item--footer">
-							<a class="socials-list__link socials-list__link--footer" href="instagram">
+					<ul class="socials-lists">
+						<li class="socials-lists__item socials-lists__item--footer">
+							<a class="socials-lists__link socials-lists__link--footer" href="instagram">
 								<svg width="20" height="20">
 									<use href="./images/icons.svg#icon-instagram"></use>
 								</svg>
 							</a>
 						</li>
-						<li class="socials-list__item socials-list__item--footer">
-							<a class="socials-list__link socials-list__link--footer" href="twiter">
+						<li class="socials-lists__item socials-lists__item--footer">
+							<a class="socials-lists__link socials-lists__link--footer" href="twiter">
 								<svg width="20" height="20">
 									<use href="./images/icons.svg#icon-twitter"></use>
 								</svg>
 							</a>
 						</li>
-						<li class="socials-list__item socials-list__item--footer">
-							<a class="socials-list__link socials-list__link--footer" href="facebook">
+						<li class="socials-lists__item socials-lists__item--footer">
+							<a class="socials-lists__link socials-lists__link--footer" href="facebook">
 								<svg width="20" height="20">
 									<use href="./images/icons.svg#icon-facebook"></use>
 								</svg>
 							</a>
 						</li>
-						<li class="socials-list__item socials-list__item--footer">
-							<a class="socials-list__link socials-list__link--footer" href="linkedin">
+						<li class="socials-lists__item socials-lists__item--footer">
+							<a class="socials-lists__link socials-lists__link--footer" href="linkedin">
 								<svg width="20" height="20">
 									<use href="./images/icons.svg#icon-linkedin"></use>
 								</svg>
@@ -288,12 +293,14 @@
 					<form class="subscription-form">
 						<div class="subscription__discus">
 							<label for="mail"></label>
-							<input class="subscription__input" type="email" name="E-mail" id="mail" placeholder="E-mail" />
+							<input class="subscription__input" type="email" name="E-mail" id="mail" placeholder="E-mail">
 							<button class="subscription-button__snd" type="submit">
 								<span>Подписаться</span>
 								<svg class="subscription-button__icon">
-									<use href="./images/icons.svg#icon-icon-send"></use>
+									<use href="./images/icons.svg#icon-icon-send">
+									</use>
 								</svg>
+		
 							</button>
 						</div>
 					</form>
