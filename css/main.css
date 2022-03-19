@@ -1389,6 +1389,9 @@ li {
 .proect-list__link {
   color: var(--title-text-color);
   text-decoration: none;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
 }
 .proect .proect-list__link:hover .proect-list__submenu {
   display: block;

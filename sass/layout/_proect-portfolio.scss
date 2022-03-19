@@ -100,6 +100,9 @@
 	&-list__link {
 		color: var(--title-text-color);
 		text-decoration: none;
+		display: flex;
+		height: 100%;
+		flex-direction: column;
 	}
 
 	.proect-list__link:hover .proect-list__submenu {
