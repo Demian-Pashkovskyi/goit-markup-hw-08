@@ -30,12 +30,50 @@
 					</ul>	
 				</nav>	
 				
-				<button type="button" class="header__icon">
-					<svg class="header__icons" width="40px" height="40px" aria-label="Переключатель меню">
-						<use href="./images/icons.svg#icon-close_40px"></use>
+				<button type="button" class="mob-modal__open">
+					<svg class="mob-modal__icons" width="40px" height="40px" aria-label="Переключатель меню">
 						<use href="./images/icons.svg#icon-menu_40px"></use>
+						<use href="./images/icons.svg#icon-close_40px"></use>
 					</svg>
 				</button>
+				<!-- <div class="backdrop-header is-hidden"> -->
+					<div class="mob-menu">
+						<div class="mob-menu__form">
+							<!-- <button class="mob-modal__close">
+								<svg class="mob-modal__icons" width="40px" height="40px" aria-label="Переключатель меню">
+									<use href="./images/icons.svg#icon-close_40px"></use>
+								</svg>
+							</button> -->
+							<ul class="mob-site-nav">
+								<li class="mob-site-nav__item">
+								<a href="index.html" class="mob-site-nav__link mob-site-nav__link--active">Студия</a>
+								</li>
+								<li class="mob-site-nav__item"><a href="./portfolio.html " class="mob-site-nav__link">Портфолио</a></li>
+								<li class="mob-site-nav__item"><a href="index.html" class="mob-site-nav__link">Контакты</a></li>
+							</ul>
+							<div>
+							<ul class="mob-header-contacts">
+								<li class="mob-header-contacts__item">
+								<a href="mailto:info@devstudio.com" class="mob-header-contacts__mail">
+									info@devstudio.com
+								</a>
+								</li>
+								<li class="mob-header-contacts__item">
+								<a href="tel:+380961111111" class="mob-header-contacts__phone">
+									+38 096 111 11 11
+								</a>
+								</li>
+							</ul>
+							<ul class="mob-soc-nav">
+								<li class="mob-soc-nav__item"><a href="#" class="mob-soc-nav__link">Instagram</a></li>
+								<li class="mob-soc-nav__item"><a href="#" class="mob-soc-nav__link">Twitter</a></li>
+								<li class="mob-soc-nav__item"><a href="#" class="mob-soc-nav__link">Facebook</a></li>
+								<li class="mob-soc-nav__item"><a href="#" class="mob-soc-nav__link">LinkedIn</a></li>
+							</ul>
+							</div>
+						</div>
+					</div>
+				</div>
 
 				<ul class="header-contacts">
 					<li class="header-contacts__item">
@@ -65,60 +103,62 @@
 				<div class="container">
 					<h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
 					<button class="hero__button" type="button" data-modal-open>Заказать услугу</button>
-						<div class="backdrop is-hidden" data-modal>
-							<div class="modal">			
-								<form class="modal-form">
-									<h2 class="modal__name"> Оставьте свои данные, мы вам перезвоним </h2>	
-									<ul>
-										<li class="modal-form__item">
-											<label for="name" class="modal-form__label">Имя</label>
-											
+					<div class="backdrop is-hidden" data-modal>
+						<div class="modal">
+							<form class="modal-form">
+								<h2 class="modal__name"> Оставьте свои данные, мы вам перезвоним </h2>
+								<ul>
+									<li class="modal-form__item">
+										<label for="name" class="modal-form__label">Имя</label>
+			
 										<input class="modal-form__input" type="text" name="name" id="name" autofocus>
 										<svg class="modal-form__icons" width="18px" height="18px">
-									<use href="./images/icons.svg#icon-person-black-18dp"></use>
-								</svg>
-										</li>
-										<li class="modal-form__item">
-											<label for="tel" class="modal-form__label">Телефон</label>
+											<use href="./images/icons.svg#icon-person-black-18dp"></use>
+										</svg>
+									</li>
+									<li class="modal-form__item">
+										<label for="tel" class="modal-form__label">Телефон</label>
 										<input class="modal-form__input" type="tel" name="tel" id="tel">
 										<svg class="modal-form__icons" width="18px" height="18px">
-									<use href="./images/icons.svg#icon-phone-black"></use>
-								</svg>
-										</li>
-										<li class="modal-form__item">
-											<label for="mail" class="modal-form__label">Почта</label>
-											<input class="modal-form__input" type="email" name="email" id="mail">
-											<svg class="modal-form__icons" width="18px" height="18px">
-									<use href="./images/icons.svg#icon-email-black"></use>
-								</svg>
-										</li>
-										<li class="modal-form__item">
-											<label for="coment" class="modal-form__label">Комментарий</label>
-										<textarea class="modal-form__textera" name="coment" id="coment" rows="9" placeholder="Введите текст"></textarea>
-										</li>
-									</ul>
-
-									<div class="modal-form__item modal-form__item--policy">
-										<label class="modal-form__label modal-form__label--policy" for="policy"> 
-											<input  class="modal-form__input modal-form__input--policy" type="checkbox" name="policy" id="policy">
-											<svg class="modal-form__icons modal-form__icons--policy" width="16px" height="15px">
-									<use href="./images/icons.svg#icon-icon-check11"></use>
-								</svg> 
-											<span>
+											<use href="./images/icons.svg#icon-phone-black"></use>
+										</svg>
+									</li>
+									<li class="modal-form__item">
+										<label for="mail" class="modal-form__label">Почта</label>
+										<input class="modal-form__input" type="email" name="email" id="mail">
+										<svg class="modal-form__icons" width="18px" height="18px">
+											<use href="./images/icons.svg#icon-email-black"></use>
+										</svg>
+									</li>
+									<li class="modal-form__item">
+										<label for="coment" class="modal-form__label">Комментарий</label>
+										<textarea class="modal-form__textera" name="coment" id="coment" rows="9"
+											placeholder="Введите текст"></textarea>
+									</li>
+								</ul>
+			
+								<div class="modal-form__item modal-form__item--policy">
+									<label class="modal-form__label modal-form__label--policy" for="policy">
+										<input class="modal-form__input modal-form__input--policy" type="checkbox" name="policy"
+											id="policy">
+										<svg class="modal-form__icons modal-form__icons--policy" width="16px" height="15px">
+											<use href="./images/icons.svg#icon-icon-check11"></use>
+										</svg>
+										<span>
 											Соглашаюсь с рассылкой и принимаю
 											<a href="#"> Условия договора</a>
-											</span>
-										</label>
-									</div>	
-										<button class="modal-form__button" type="submit">Отправить</button>
-								</form>	
-							<button class="modal__close"  data-modal-close>
+										</span>
+									</label>
+								</div>
+								<button class="modal-form__button" type="submit">Отправить</button>
+							</form>
+							<button class="modal__close" data-modal-close>
 								<svg class="modal__icon" width="11px" height="11px">
 									<use href="./images/icons.svg#icon-Modal"></use>
 								</svg>
 							</button>
-							</div>
 						</div>
+					</div>
 				</div>
 			</section>
 

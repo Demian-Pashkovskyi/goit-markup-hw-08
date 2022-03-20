@@ -67,26 +67,7 @@
 
 		margin-right: 88px;
 	}
-	&__icons {
-		fill: currentColor;
-	}
-	&__icon {
-		padding: 0px;
-		margin: 0px;
-		border: none;
-		background-color: transparent;
-		display: inline-flex;
 
-		@media screen and (min-width: 768px) {
-			width: 768px;
-			display: none;
-		}
-
-		@media screen and (min-width: 1200px) {
-			width: 1200px;
-			display: none;
-		}
-	}
 	&-contacts {
 		display: none;
 		margin-left: auto;

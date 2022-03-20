@@ -27,3 +27,18 @@
     bodyScrollLock.enableBodyScroll(document.body);
   });
 })();
+
+(() => {
+  const refs = {
+    openModalBtn: document.querySelector("[data-modals-open]"),
+    closeModalBtn: document.querySelector("[data-modals-close]"),
+    modal: document.querySelector("[data-modals]"),
+  };
+
+  refs.openModalBtn.addEventListener("click", toggleMobilMenu);
+  refs.closeModalBtn.addEventListener("click", toggleModal);
+
+  function toggleModal() {
+    refs.mobileMenu.classList.toggle("is-hidden");
+  }
+})();
