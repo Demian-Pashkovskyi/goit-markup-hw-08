@@ -30,20 +30,16 @@
 					</ul>	
 				</nav>	
 				
-				<button type="button" class="mob-modal__open">
+				<button type="button" class="mob-modal-btn" aria-expanded="false" 
+				aria-controls="menu-contaiter" data-menu-button>
 					<svg class="mob-modal__icons" width="40px" height="40px" aria-label="Переключатель меню">
-						<use href="./images/icons.svg#icon-menu_40px"></use>
-						<use href="./images/icons.svg#icon-close_40px"></use>
+						<use class="icon-menu" href="./images/icons.svg#icon-menu_40px"></use>
+						<use class="icon-close" href="./images/icons.svg#icon-close_40px"></use>
 					</svg>
 				</button>
-				<!-- <div class="backdrop-header is-hidden"> -->
-					<div class="mob-menu">
+					<div class="menu-container" (mob-menu) data-menu id="menu-container">
 						<div class="mob-menu__form">
-							<!-- <button class="mob-modal__close">
-								<svg class="mob-modal__icons" width="40px" height="40px" aria-label="Переключатель меню">
-									<use href="./images/icons.svg#icon-close_40px"></use>
-								</svg>
-							</button> -->
+							<div class="mob-menu__top">
 							<ul class="mob-site-nav">
 								<li class="mob-site-nav__item">
 								<a href="index.html" class="mob-site-nav__link mob-site-nav__link--active">Студия</a>
@@ -51,7 +47,8 @@
 								<li class="mob-site-nav__item"><a href="./portfolio.html " class="mob-site-nav__link">Портфолио</a></li>
 								<li class="mob-site-nav__item"><a href="index.html" class="mob-site-nav__link">Контакты</a></li>
 							</ul>
-							<div>
+							</div>
+							<div class="mob-menu__botton">
 							<ul class="mob-header-contacts">
 								<li class="mob-header-contacts__item">
 								<a href="mailto:info@devstudio.com" class="mob-header-contacts__mail">
@@ -73,7 +70,6 @@
 							</div>
 						</div>
 					</div>
-				</div>
 
 				<ul class="header-contacts">
 					<li class="header-contacts__item">
@@ -552,6 +548,5 @@
 
 		<script src="./js/modal.js"></script>
 		<script src="./js/mobile-menu.js"></script>
-		<script src="./js/toggle.js"></script>
 	</body>
 </html>
