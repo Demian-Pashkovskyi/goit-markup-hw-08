@@ -6,8 +6,11 @@ body {
 	color: var(--title-text-color);
 	font-family: Roboto, sans-serif;
 }
+body.is-open {
+	overflow: hidden;
+}
 
-body.mobil-open {
+body.mobil-menu {
 	overflow: hidden;
 }
 

@@ -7,7 +7,11 @@ body {
   font-family: Roboto, sans-serif;
 }
 
-body.mobil-open {
+body.is-open {
+  overflow: hidden;
+}
+
+body.mobil-menu {
   overflow: hidden;
 }
 
