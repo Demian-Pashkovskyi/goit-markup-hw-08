@@ -44,7 +44,7 @@
 	}
 
 	.comand-list__item {
-		@media screen and (min-width: 480px) {
+		@media screen and (max-width: 767px) {
 			margin: 15px;
 		}
 
@@ -58,7 +58,7 @@
 		}
 
 		.comand-list__description {
-			width: 450px;
+			max-width: 450px;
 			box-sizing: border-box;
 			border-top: none;
 			padding-top: 30px;
@@ -69,10 +69,10 @@
 			background-color: var(--primery-fon-color);
 
 			@media screen and (min-width: 768px) {
-				width: 354px;
+				max-width: 354px;
 			}
 			@media screen and (min-width: 1200px) {
-				width: 270px;
+				max-width: 270px;
 			}
 		}
 

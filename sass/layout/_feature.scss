@@ -24,7 +24,6 @@
 .feature-list {
 	display: flex;
 	flex-wrap: wrap;
-	margin: -15px;
 	@media screen and (min-width: 480px) {
 		flex-wrap: nowrap;
 		flex-direction: column;
@@ -32,6 +31,7 @@
 	@media screen and (min-width: 768px) {
 		flex-wrap: wrap;
 		flex-direction: row;
+		margin: -15px;
 	}
 
 	@media screen and (min-width: 1200px) {

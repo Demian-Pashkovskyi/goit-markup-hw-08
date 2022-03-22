@@ -17,7 +17,7 @@
 	min-width: 480px;
 	// width: 100vw;
 	height: 100vh;
-	padding: 25px 40px 48px 40px;
+	padding: 48px 40px 48px 40px;
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
@@ -38,7 +38,7 @@
 	&:focus .mob-modal__icons {
 		fill: var(--accent-color);
 	}
-	&.is-open .icon-menu {
+	& .icon-close {
 		display: none;
 	}
 
@@ -46,42 +46,21 @@
 		display: block;
 	}
 
-	& .icon-close {
+	&.is-open .icon-menu {
 		display: none;
 	}
+
 	@media screen and (min-width: 768px) {
 		display: none;
 	}
 }
-// .mob-modal-btn .is-open .icon-close,
-// body {
-// 	overflow: hidden;
-// }
 
 .menu-container {
 	display: none;
-	// position: absolute;
-	// top: 100%;
-	// left: 0;
-	// width: 100%;
-	// height: 100%;
-
-	// position: fixed;
-	// // display: block;
-	// z-index: 1;
-	// overflow-y: scroll;
-	// background-color: var(--text-color-footer);
-	// width: 100%;
-	// height: 100%;
-	// top: 0;
-	// left: 0;
 	&.is-open {
 		display: block;
 		position: absolute;
 		top: 100%;
-		left: 0;
-		width: 100%;
-		height: 100%;
 
 		position: fixed;
 		// display: block;
