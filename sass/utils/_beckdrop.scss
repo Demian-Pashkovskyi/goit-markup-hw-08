@@ -7,6 +7,8 @@
 	background-color: #503b3b33;
 	opacity: 1;
 	transition: opacity 250ms linear;
+	padding: 15px;
+	z-index: 4;
 }
 
 .backdrop.is-hidden .modal {

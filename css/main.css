@@ -935,37 +935,42 @@ li {
 
 .modal {
   display: block;
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   visibility: visible;
   padding: 40px;
-  width: 450px;
+  width: 100%;
+  opacity: 1;
   height: 609px;
   background-color: var(--primery-fon-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 250ms var(--timing-translation), opasity 250ms var(--timing-translation);
 }
+@media screen and (min-width: 468px) {
+  .modal {
+    max-width: 450px;
+    position: absolute;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal {
-    width: 528px;
+    max-width: 528px;
     height: 581px;
   }
 }
 .modal-form {
   display: block;
   margin-top: 12px;
-  width: 370px;
-  height: 342px;
+  max-width: 370px;
   margin-left: auto;
   margin-right: auto;
 }
 @media screen and (min-width: 1200px) {
   .modal-form {
-    width: 448px;
-    height: 342px;
+    max-width: 448px;
   }
 }
 .modal-form__item {
@@ -1061,9 +1066,8 @@ li {
   position: absolute;
   height: 16px;
   width: 16px;
-  top: -67%;
-  bottom: 80%;
-  margin-left: 1px;
+  bottom: 90%;
+  margin: 1px;
   background-size: contain;
   background-origin: border-box;
   justify-content: center;
@@ -1081,7 +1085,7 @@ li {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
   resize: none;
-  width: 370px;
+  max-width: 370px;
   height: 120px;
   padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -1090,7 +1094,7 @@ li {
 }
 @media screen and (min-width: 1200px) {
   .modal-form__textera {
-    width: 448px;
+    max-width: 448px;
     height: 120px;
   }
 }
@@ -1155,6 +1159,14 @@ li {
   transition: fill 250ms var(--timing-translation);
 }
 
+@media screen and (max-width: 467px) {
+  .modal-form__icons--policy {
+    height: 9px;
+    width: 9px;
+    bottom: 62%;
+    margin: 2px;
+  }
+}
 .modal-form__input:focus + .modal-form__icons {
   fill: var(--accent-color);
   color: #eeeeee;
@@ -1301,18 +1313,18 @@ li {
   align-items: center;
   display: flex;
   text-decoration: none;
-  font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  font-size: 34px;
-  line-height: 1.18;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
 }
 
 .mob-soc-nav {
   display: flex;
+  flex-wrap: wrap;
 }
-.mob-soc-nav__item:not(:last-child) {
+.mob-soc-nav__item {
   display: flex;
 }
 .mob-soc-nav__link {
@@ -1621,6 +1633,8 @@ li {
   background-color: #503b3b33;
   opacity: 1;
   transition: opacity 250ms linear;
+  padding: 15px;
+  z-index: 4;
 }
 
 .backdrop.is-hidden .modal {
