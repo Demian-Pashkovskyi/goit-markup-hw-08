@@ -74,10 +74,6 @@
 		display: none;
 		margin-left: auto;
 
-		@media screen and (min-width: 480px) {
-			// width: 480px;
-		}
-
 		@media screen and (min-width: 768px) {
 			// display: inline-flex;
 			// max-width: 1199px;
@@ -88,7 +84,6 @@
 			flex-direction: row;
 			display: flex;
 			flex-direction: column;
-			margin-left: auto;
 			justify-content: space-around;
 			-webkit-box-orient: vertical;
 			-webkit-box-direction: normal;
@@ -107,7 +102,11 @@
 		}
 
 		&__item:not(last-child) {
-			margin-right: 50px;
+			margin-bottom: 10px;
+
+			@media screen and (min-width: 1200px) {
+				margin-right: 50px;
+			}
 		}
 		&__link {
 			transition: color 250ms var(--timing-translation);

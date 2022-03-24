@@ -2,19 +2,25 @@
 	padding-top: 60px;
 	padding-bottom: 60px;
 	@media screen and (min-width: 1200px) {
-		padding-top: 94px;
+		padding-top: 92px;
 		padding-bottom: 94px;
 	}
 	&__title {
-		margin-bottom: 50px;
+		margin-bottom: 30px;
 		color: var(--primery-text-color);
 		// @include font(normal, 700px, 36px, 1.17);
 		font-style: normal;
 		font-weight: 700;
-		font-size: 36px;
-		line-height: 1.17;
+		font-size: 28px;
+		line-height: 1.18;
 		text-align: center;
 		letter-spacing: 0.03em;
+
+		@media screen and (min-width: 1200px) {
+			margin-bottom: 50px;
+			font-size: 36px;
+			line-height: 1.17;
+		}
 	}
 	&__list {
 		display: flex;
