@@ -48,9 +48,14 @@
 		line-height: 1.14;
 		letter-spacing: 0.03em;
 		text-transform: uppercase;
-		text-align: start;
+		text-align: center;
 		color: var(--primery-text-color);
+
+		@media screen and (min-width: 768px) {
+			text-align: start;
+		}
 	}
+
 	&__text {
 		// @include font(normal, 400px, 14px, 1.71);
 		font-style: normal;
